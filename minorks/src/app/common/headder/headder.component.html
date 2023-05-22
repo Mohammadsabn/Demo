@@ -1,0 +1,29 @@
+<nav>
+    <div class="logo">
+        <img src="../../../assets/images/Logo.png" alt="">
+    </div>
+    <div class="user">
+        <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Search...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+          <div class="profilePhoto">
+
+            <input type="file" placeholder="profilePhoto" (change)="onFileSelected($event)" [attr.data-file-name]="selectedFileName"  accept=".jpg,.png">
+          </div>
+          <div>
+
+              <h1>Arekesh</h1>
+          </div>
+          <div>
+ 
+              <i class="fa fa-bell" ></i>
+          </div>
+          <div>
+
+              <button>Logout</button>
+          </div>
+    </div>
+
+</nav>
+

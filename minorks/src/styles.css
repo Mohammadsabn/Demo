@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+*{margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+
+     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    
+  
+  }
+  .allighn{
+    justify-content: center;
+    margin-left: 270px;
+    height: 100%;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      padding: 10px;
+    margin: 0px;
+
+  }
+  .container{
+      max-width: 700px;
+      width: 100%;
+      background-color: #fff;
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      margin-top: 100px;
+    }
+    .container .title{
+      font-size: 25px;
+      font-weight: 500;
+      position: relative;
+    }
+    .container .title::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 30px;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    .content form .user-details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 0 12px 0;
+    }
+    form .user-details .input-box{
+      margin-bottom: 15px;
+      width: calc(100% / 2 - 20px);
+    }
+    form .input-box label.details{
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+      height: 45px;
+      width: 100%;
+      outline: #9b59b6;
+      font-size: 16px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #9b59b6;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid{
+      border-color: #9b59b6;
+    }
+    form .radioButton .radioButtontitle {
+      font-size: 17px;
+      font-weight: 500;
+      padding-bottom: 10px;
+      padding-top: 10px;
+   }
+  form .radioButton label{
+      margin-left: 24px;
+      padding-right: 10px;
+      font-family: 'Poppins',sans-serif; ;
+  }
+  .button{
+      color: white;
+      background-color: navy;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 3px 12px;
+      cursor: pointer;
+      border-radius: 39px;
+  } 
+  .button:hover{
+      background-color: #9b59b6;
+      
+  }
+  
+  select{
+    height: 45px;
+    width: 100%;
+    outline: #9b59b6;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #9b59b6;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    }
+  
+    .checkbox{
+      
+      margin-right: 73px;
+      margin-top: 37px;
+      font-size: 18px;
+  
+    }
+    
+    @media(max-width :767px ){
+      .container{
+          width: 100%;
+          margin-bottom: 30px;
+      }
+    }
+    
+    @media(max-width :574px ){
+      .container{
+          width: 100%;
+         
+      }
+    }
+  
+  

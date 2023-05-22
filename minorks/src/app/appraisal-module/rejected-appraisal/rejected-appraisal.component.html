@@ -1,0 +1,174 @@
+<app-headder></app-headder>
+<app-sidebar></app-sidebar>
+
+
+<div class="allighn">
+
+    <div class=" table-container">
+        <div class="alert alert-secondary" role="alert">
+            Appraisal submitted successfully for the month
+        </div>
+
+        <h5 class="tittle">Employee Data</h5>
+        <hr>
+        <form class="#" [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Review Period & Date</th>
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Employee ID</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Project</th>
+                        <th scope="col">Total Experience</th>
+                        <th scope="col">Nurture Experience</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> </td>
+                        <td>
+                        <td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </form>
+
+    </div>
+</div>
+<div class="allighn">
+    <div class=" table-container">
+        <h5 class="tittle"> Appraisal submitted successfully for the month </h5>
+<hr>
+        <form class="#"  [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Performance Category</th>
+                        <th scope="col">Appraisee Rating</th>
+                        <th scope="col">Appraisee Remarks</th>
+                        <th scope="col">Appraiser Rating</th>
+                        <th scope="col">Appraiser Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ability at the position</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td> </td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Attendance</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="attendanceRemarks"  formControlName="attendanceRemarks" ></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Leadership Ability</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="leadershipAbilityRemarks" fromControlName="leadershipAbilityRemarks"  ></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Ability to meet deadlines</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="deadlinesRemarks" formControlName="deadlinesRemarks" ></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Technical Skills</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="technicalSkillRemarks"  formControlName="technicalSkillRemarks" ></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Quality of Work</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="qualityOfWorkRemarks" formControlName="qualityOfWorkRemarks" ></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Team Work Ability</th>
+                        <td></td>
+                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+
+                        <td></td>
+                        <td><textarea name="teamWorkAbilityRemarks" formControlName="teamWorkAbilityRemarks"  ></textarea></td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+            
+        </form>
+        <div class="content"  style="margin-left: 20px;">
+            <div></div>
+            <form class="#" [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <label class="Details">
+                            Employee Concerns/Comments </label>
+                        <div>
+                            <input style="width: 70%;" type="text" placeholder="Employee Comments" name="employeeComments" formControlName="employeeComments">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label class="Details">Future Goals</label>
+                        <div>
+                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals" formControlName="futureGoals">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label class="Details">Appraiser Comments</label>
+                        <div>
+                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals" formControlName="futureGoals">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label class="Details">Appraisal approved by  </label>
+                        <div>
+                            <input style="width: 70%;" type="text" placeholder="Appraisal approved by" name="futureGoals" formControlName="futureGoals">
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <button class="button">Submit</button>
+                        <button class="button" >Back</button>
+                    </div>
+                    
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<app-footer></app-footer>
