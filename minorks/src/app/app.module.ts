@@ -37,6 +37,10 @@ import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-syst
 import{MarkDetailsComponent} from '../app/mark-module/mark-details/mark-details.component'
 import{RecallmilestoneComponent} from '../app/mark-module/recallmilestone/recallmilestone.component'
 import{SearchProjectDetailsComponent} from '../app/mark-module/search-project-details/search-project-details.component'
+import { AddITAssetDetailsComponent } from '../app/asset-mangement-system-module/add-itasset-details/add-itasset-details.component';
+import { AddNonItAssetDetailsComponent } from '../app/asset-mangement-system-module/add-non-it-asset-details/add-non-it-asset-details.component';
+import { AssetDetailsComponent } from '../app/asset-mangement-system-module/asset-details/asset-details.component';
+import { ITAssetAllocationComponent } from './asset-mangement-system-module/itasset-allocation/itasset-allocation.component';
 
 
 @NgModule({
@@ -73,7 +77,11 @@ import{SearchProjectDetailsComponent} from '../app/mark-module/search-project-de
     // Mahesh
     MarkDetailsComponent,
     RecallmilestoneComponent,
-    SearchProjectDetailsComponent
+    SearchProjectDetailsComponent,
+    AddITAssetDetailsComponent,
+    AddNonItAssetDetailsComponent,
+    AssetDetailsComponent,
+    ITAssetAllocationComponent
 
     
   ],
