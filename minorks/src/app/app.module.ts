@@ -34,6 +34,10 @@ import { DoAppraisalComponent } from './appraisal-module/do-appraisal/do-apprais
 import { ViewAppraisalDataComponent } from '../app/appraisal-module/view-appraisal-data/view-appraisal-data.component';
 import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-system/appraisal-system.component'
 
+import{MarkDetailsComponent} from '../app/mark-module/mark-details/mark-details.component'
+import{RecallmilestoneComponent} from '../app/mark-module/recallmilestone/recallmilestone.component'
+import{SearchProjectDetailsComponent} from '../app/mark-module/search-project-details/search-project-details.component'
+
 
 @NgModule({
   declarations: [
@@ -65,6 +69,11 @@ import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-syst
     DoAppraisalComponent,
     ViewAppraisalDataComponent,
     AppraisalSystemComponent,
+
+    // Mahesh
+    MarkDetailsComponent,
+    RecallmilestoneComponent,
+    SearchProjectDetailsComponent
 
     
   ],
