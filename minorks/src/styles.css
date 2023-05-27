@@ -137,4 +137,186 @@
       }
     }
   
+    /* Mahesh Css */
+  /* holiday module start */
+
+  .table-content {
+    background-color: #f5f5f5;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+  .titleViewPage{
+    margin-right: 600px;
+    font-weight: normal;
+    font-size: 25px;
+    
+  }
+
+   .contentleft {
+    display: flex;
+    align-items: center;
+    display: flex;
+    /* justify-content:right; */
+    border-color: #9b59b6;
+  }
+
+  .show-entries{
+    width: 66px;
+    height: 22px;
+}
+
+
+.searchData{
+    height: 35px;
+    width: 171px;
+    outline: #9b59b6;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top:     1px;
+    margin-right: 5px;
+    margin-left: 4px;
+    padding-left: 15px;
+    border: 1px solid #9b59b6;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+
+.tablecontainer {
+    
+    width: 1200px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
   
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    /* border-radius: 10px; */
+    
+    
+    
+   
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: px solid #ddd;
+    
+    border: #333;
+    border-color:rgba(234, 123, 217, 0.813);
+    /* border-radius: 10px; */
+    border: 10px;
+  }
+  
+  th {
+    background-color:rgba(11, 7, 139, 0.911);
+    color:#f6f2f2;
+    font-size:17px;
+    font-weight: normal;
+  }
+ 
+  .addbutton{
+    display: flex; justify-content: space-between;
+}
+
+/* holiday module end */
+  
+
+
+/* asset module start */
+
+
+.card {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+  padding: 20px;
+} 
+
+.card-button{
+  /* color: #ffab40; */
+  color: navy;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  color:black
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.532);
+}
+
+
+
+
+/* asset module end */
+
+.listbutton {
+  padding: 3px 16px;
+  font-size: 14px;
+  margin: 4px 2px;
+  background-color:navy;
+  color:white;
+  border-radius: 4px;
+}
+  
+/* invoice module start */
+
+/* td,th{
+   
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  
+}  */
+.reporttextarea{
+  width: 200px;
+  height: 100px;
+}
+.tableleft{
+  border-collapse: collapse;
+  width: 64%; 
+  margin-left: 80px;
+  
+ 
+
+  /* display: flex;
+  border-collapse: collapse;
+  width: 78%;
+  margin-left: 238px; */
+}
+.signature textarea{
+  margin-left: 410px;
+  margin-top: 40px;
+  margin-bottom: 23PX;
+  width: 216px;
+  height: 50px;
+  resize: none; 
+
+}
+
+hr{
+  border: 1px solid black;
+}
+
+.tableleft2{
+  display: flex;
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: 250px;
+}
+
+
+/* invoice module end */
