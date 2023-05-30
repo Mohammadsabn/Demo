@@ -320,3 +320,178 @@ hr{
 
 
 /* invoice module end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Jadhav */
+
+.contentleft {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content:right;
+  border-color: #9b59b6;
+}
+
+.show-entries{
+  width: 66px;
+  height: 22px;
+}
+
+
+.serchdata{
+  height: 35px;
+  width: 171px;
+  outline: #9b59b6;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top:     1px;
+  margin-right: 5px;
+  margin-left: 4px;
+  padding-left: 15px;
+  border: 1px solid #9b59b6;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  
+}
+
+.tablecontainer {
+  
+  width: 1200px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: px solid #ddd;
+  border: #333;
+  border-color:rgba(88, 14, 77, 0.813);
+}
+
+th {
+  background-color:rgba(11, 7, 139, 0.911);
+  color: #f6f2f2;
+}
+.centerText{
+  margin-left: 33rem;
+  margin-top: 3rem;
+}
+.tableselect {
+  height: 35px;
+  width: 55%;
+}
+
+
+
+/* Card CSS */
+
+.card {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+  padding: 47px;
+  width: 600px;
+  height: 250px;
+} 
+
+.card-button{
+  /* color: #ffab40; */
+  color: navy;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  color:black
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.532);
+}
+
+/* Md Css */
+.table-container{
+  width: 90%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-top: 100px;
+  
+}
+
+.table-container textarea{
+
+  height: 40px;
+  width: 139px;
+  border-radius: 10px;
+}
+table{
+  align-items: center;
+  justify-content: center;
+}
+
+table th {
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+table  td{
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+
+a{
+  color: #fff;
+}
+
+.pick-button {
+  color: rgb(248, 244, 244);
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 18px 20px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: rgb(8, 53, 122);
+}
+.back-button{
+  color: whitesmoke;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 11px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: rgb(8, 53, 122);
+}
+

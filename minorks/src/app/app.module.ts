@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import{ReactiveFormsModule} from '@angular/forms';
+// import{ReactiveFormsModule} from '@angular/forms';
 import { PersonalDetailsComponent } from '../app/capture-module/personal-details/personal-details.component';
 import { ProfessionalDetailsComponent } from '../app/capture-module/professional-details/professional-details.component';
 import { RegisterComponent } from '../app/capture-module/register/register.component'
@@ -30,7 +31,7 @@ import { AddAppraisalComponent } from './appraisal-module/add-appraisal/add-appr
 import{AppraisalComponent} from '../app/appraisal-module/appraisal/appraisal.component';
 import { RejectedAppraisalComponent } from './appraisal-module/rejected-appraisal/rejected-appraisal.component';
 import { ViewappraisalComponent } from './appraisal-module/viewappraisal/viewappraisal.component';
-import { DoAppraisalComponent } from './appraisal-module/do-appraisal/do-appraisal.component';
+// import { DoAppraisalComponent } from './appraisal-module/do-appraisal/do-appraisal.component';
 import { ViewAppraisalDataComponent } from '../app/appraisal-module/view-appraisal-data/view-appraisal-data.component';
 import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-system/appraisal-system.component'
 
@@ -90,6 +91,44 @@ import { ViewHolidaysComponent } from '../app/request-module/view-holidays/view-
 import { LeaveSummaryComponent } from '../app/request-module/leave-summary/leave-summary.component';
 import { MarkLeaveComponent } from '../app/request-module/mark-leave/mark-leave.component';
 import { UnMarkLeaveComponent } from '../app/request-module/un-mark-leave/un-mark-leave.component';
+
+
+
+
+
+
+
+//  Jadhav Import  
+import { ReportBulkChooseComponent } from '../app/Report-module/report-bulk-choose/report-bulk-choose.component'
+import { ReportCompChooseComponent } from '../app/Report-module/report-comp-choose/report-comp-choose.component'
+import { ReportCompLeaveBalanceComponent } from '../app/Report-module/report-comp-leave-balance/report-comp-leave-balance.component'
+import { ReportDetailsComponent } from '../app/Report-module/report-details/report-details.component'
+import { ReportLeaveDetailsValueComponent } from '../app/Report-module/report-leave-details-value/report-leave-details-value.component'
+
+
+import { AppraisalDataNotApprovedComponent } from './appRenovated-module/appraisal-data-not-approved/appraisal-data-not-approved.component';
+import { CreateAppDataComponent } from './appRenovated-module/create-app-data/create-app-data.component';
+import { DoAppraisalComponent } from './appRenovated-module/do-appraisal/do-appraisal.component';
+import { ModifyAppDataComponent } from './appRenovated-module/modify-app-data/modify-app-data.component';
+
+
+import { MessageComponent } from './BirthdayMessage-module/message/message.component';
+import { SentMessageComponent } from './BirthdayMessage-module/sent-message/sent-message.component';
+import { ComposeMessageComponent } from './BirthdayMessage-module/compose-message/compose-message.component';
+import { InboxMessageComponent } from './BirthdayMessage-module/inbox-message/inbox-message.component';
+
+import { BankDetailsComponent } from './Employee-module/BankDetails/bank-details/bank-details.component';
+
+import { ForgotpasswordComponent } from './Reset-module/ForgotPassword/forgotpassword/forgotpassword.component';
+
+import { AppRejectedReqComponent } from './Travel-module/app-rejected-req/app-rejected-req.component';
+import { ApproveReqComponent } from './Travel-module/approve-req/approve-req.component';
+import { CancelTravelDetailsComponent } from './Travel-module/cancel-travel-details/cancel-travel-details.component';
+import { CancelTravelQueueComponent } from './Travel-module/cancel-travel-queue/cancel-travel-queue.component';
+import { TravelComponent } from './Travel-module/travel/travel.component';
+import { TravelFAQDetailsComponent } from './Travel-module/travel-faqdetails/travel-faqdetails.component';
+import { ViewTravelApprQueueComponent } from './Travel-module/view-travel-appr-queue/view-travel-appr-queue.component';
+import { LoginComponent } from './login-module/login/login.component';
 
 
 
@@ -172,7 +211,6 @@ import { UnMarkLeaveComponent } from '../app/request-module/un-mark-leave/un-mar
       MarkDetailsComponent,
       RecallmilestoneComponent,
       SearchProjectDetailsComponent,
-
       ChangePasswordComponent,
 
     ApplyLeaveComponent,
@@ -182,14 +220,49 @@ import { UnMarkLeaveComponent } from '../app/request-module/un-mark-leave/un-mar
     ViewHolidaysComponent,
     LeaveSummaryComponent,
     MarkLeaveComponent,
-     UnMarkLeaveComponent
+     UnMarkLeaveComponent,
+
+
+     // Jadhav
+    ReportBulkChooseComponent,
+    ReportCompChooseComponent,
+    ReportCompLeaveBalanceComponent,
+    ReportDetailsComponent,
+    ReportLeaveDetailsValueComponent,
+
+    AppraisalDataNotApprovedComponent,
+    CreateAppDataComponent,
+    DoAppraisalComponent,
+    ModifyAppDataComponent,
+
+    MessageComponent,
+    SentMessageComponent,
+    ComposeMessageComponent,
+    InboxMessageComponent,
+
+    BankDetailsComponent,
+
+    ForgotpasswordComponent,
+
+    AppRejectedReqComponent,
+    ApproveReqComponent,
+    CancelTravelDetailsComponent,
+    CancelTravelQueueComponent,
+    TravelComponent,
+    TravelFAQDetailsComponent,
+    ViewTravelApprQueueComponent,
+    LoginComponent
+
+
+
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [ApiserviceService],

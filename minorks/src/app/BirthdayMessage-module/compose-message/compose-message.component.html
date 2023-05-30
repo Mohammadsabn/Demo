@@ -1,0 +1,35 @@
+<div class="container">
+
+    <h2>Compose</h2> <br>
+    <form (ngSubmit)="composeMessage()" #composeForm="ngForm">
+
+        <div class="input-box">
+            <label for="recipient">Recipient: </label>
+            <input class="details" type="text" id="recipient" name="recipient" [(ngModel)]="recipient" required>
+        </div>
+        <br>
+        <div class="input-box">
+            <label for="content">Message: </label>
+            <textarea id="content" name="content" [(ngModel)]="content" required></textarea>
+        </div>
+
+        <br><br>
+        <button class="button" type="submit" [disabled]="!composeForm.valid">Send</button>
+
+    </form>
+
+    <div id="successMessage" style="display: none;">Message sent successfully</div>
+
+</div>
+
+<!-- <h2>Sent Items</h2>
+<ul>
+    <li *ngFor="let message of sentItems; let i = index">
+        <strong>To: </strong> {{ message.recipient }}
+        <br>
+        <strong>Message: </strong> {{ message.content }}
+        <br>
+        <button class="button" (click)="deleteMessage(i, 'sent')">Delete</button>
+    </li>
+    <li *ngIf="sentItems.length === 0">No sent messages.</li>
+</ul> -->

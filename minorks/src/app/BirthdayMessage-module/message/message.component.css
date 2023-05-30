@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    margin-top: 90px;
+  }
+
+  p {
+    margin-top: 45px;
+    font-size: 20px;
+
+    font-style: oblique;
+    font-size: x-large;
+  }
+
+  .button {
+    margin: 78px 1px 1px 368px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }

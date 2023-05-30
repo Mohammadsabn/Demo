@@ -1,0 +1,73 @@
+<form>
+    <div class="tablecontainer">
+        <h1 class="title">Professional KPI</h1>
+        <div class="contentleft">
+            <label>Search:</label>
+            <input type="text" name="employeeName" formControlName="employeeName" class="serchdata" placeholder="">
+        </div><br>
+
+        <span>Show </span>
+        <select class="show-entries" (click)="onItemsPerPageChange()">
+            <option *ngFor="let option of itemsPerPageOptions" [value]="option">{{option}}</option>
+        </select>
+        <span> entries</span>
+        <br><br>
+
+        <hr> <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Indicator(KPI)</th>
+                    <th>Weightage</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pkpi of pkpi|slice: (currentPage - 1) * itemsPerPage : currentPage * itemsPerPage">
+                    <td>{{ pkpi.Indicator }}</td>
+                    <td>{{ pkpi.Weightage }}</td>
+                    <td>{{ pkpi.Role }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+    </div>
+
+    <br><br>
+
+    <div class="tablecontainer">
+        <h1 class="title"> Behavioural KPI</h1>
+        <div class="contentleft">
+            <label>Search:</label>
+            <input type="text" name="employeeName" formControlName="employeeName" class="serchdata" placeholder="">
+        </div> <br><br>
+
+        <span>Show </span>
+        <select class="show-entries" (click)="onItemsPerPageChange()">
+            <option *ngFor="let option of itemsPerPageOptions" [value]="option">{{option}}</option>
+        </select>
+        <span> entries</span>
+        <br><br>
+
+        <hr> <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Indicator(KPI)</th>
+                    <th>Weightage</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bkpi of bkpi|slice: (currentPage - 1) * itemsPerPage : currentPage * itemsPerPage">
+                    <td>{{ bkpi.Indicator }}</td>
+                    <td>{{ bkpi.Weightage }}</td>
+                    <td>{{ bkpi.Role }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+
+</form>
