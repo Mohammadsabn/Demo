@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import{LoginServiceService} from '../../services/login-service.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +10,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent {
 
+  constructor(private service:LoginServiceService,
+    private router:Router){}
 
   employeeId:any;
   Login=new FormGroup<any>({
@@ -17,6 +21,10 @@ export class LoginComponent {
   })
   login(item:any){
     console.log(item);
- 
+    this.service.userLogin(item).subscribe(
+      (Response)=>{
+        console.log(Response);
+      }
+    )
   }
 }

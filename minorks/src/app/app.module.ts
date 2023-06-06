@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -117,7 +118,7 @@ import { SentMessageComponent } from './BirthdayMessage-module/sent-message/sent
 import { ComposeMessageComponent } from './BirthdayMessage-module/compose-message/compose-message.component';
 import { InboxMessageComponent } from './BirthdayMessage-module/inbox-message/inbox-message.component';
 
-import { BankDetailsComponent } from './Employee-module/BankDetails/bank-details/bank-details.component';
+import { BankDetailsComponent } from '../app/employee-module/BankDetails/bank-details/bank-details.component';
 
 import { ForgotpasswordComponent } from './Reset-module/ForgotPassword/forgotpassword/forgotpassword.component';
 

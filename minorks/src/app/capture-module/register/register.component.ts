@@ -33,15 +33,10 @@ export class RegisterComponent implements OnInit {
   })
  login(item:any){
     console.log(item);
-    // this.api.createData(item.employeeId).subscribe((res)=>{
-    //   console.log(res,'Data added succerfully')
-    // })
-
-  //   this.http.post('http://localhost:3000/insert', item, { responseType: 'text' })
-  // .subscribe(
-  //   response => console.log(response),
-  //   error => console.log(error)
-  // );
+    if(item!=null){
+      this.router.navigate(['professionalDetails'])
+    }
+    
 
   
   }
