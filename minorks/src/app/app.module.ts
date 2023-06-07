@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import{FormsModule, ReactiveFormsModule} from '@angular/forms';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// import{ReactiveFormsModule} from '@angular/forms';
+// --------------------------------    Md & Abhi's  ------------------------------------------- 
+
+import { LoginComponent } from './login-module/login/login.component';
 import { PersonalDetailsComponent } from '../app/capture-module/personal-details/personal-details.component';
 import { ProfessionalDetailsComponent } from '../app/capture-module/professional-details/professional-details.component';
 import { RegisterComponent } from '../app/capture-module/register/register.component'
 import { HttpClientModule } from '@angular/common/http';
-import { FooterComponent} from '../app/common/footer/footer.component'
-import{HeadderComponent} from '../app/common/headder/headder.component'
-import{SidebarComponent} from '../app/common/sidebar/sidebar.component';
-import {ChildProjectComponent} from '../app/project-module/child-project/child-project.component'
+import { FooterComponent } from '../app/common/footer/footer.component'
+import { HeadderComponent } from '../app/common/headder/headder.component'
+import { SidebarComponent } from '../app/common/sidebar/sidebar.component';
+import { ChildProjectComponent } from '../app/project-module/child-project/child-project.component'
 import { ApiserviceService } from './apiservice.service';
 import { CustomercreationComponent } from './project-module/customercreation/customercreation.component';
 import { CustomerModificationComponent } from './project-module/customer-modification/customer-modification.component';
@@ -29,14 +29,15 @@ import { CmsUploadAdminComponent } from './cms-module/cms-upload-admin/cms-uploa
 import { PolicyUploadAdminComponent } from './cms-module/policy-upload-admin/policy-upload-admin.component';
 import { MagzineUploadAdminComponent } from './cms-module/magzine-upload-admin/magzine-upload-admin.component';
 import { AddAppraisalComponent } from './appraisal-module/add-appraisal/add-appraisal.component';
-import{AppraisalComponent} from '../app/appraisal-module/appraisal/appraisal.component';
+import { AppraisalComponent } from '../app/appraisal-module/appraisal/appraisal.component';
 import { RejectedAppraisalComponent } from './appraisal-module/rejected-appraisal/rejected-appraisal.component';
 import { ViewappraisalComponent } from './appraisal-module/viewappraisal/viewappraisal.component';
 // import { DoAppraisalComponent } from './appraisal-module/do-appraisal/do-appraisal.component';
 import { ViewAppraisalDataComponent } from '../app/appraisal-module/view-appraisal-data/view-appraisal-data.component';
 import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-system/appraisal-system.component'
 
-//mahesh----------------------
+
+// --------------------------------    Mahesh ------------------------------------------- 
 
 import { AssetDetailsComponent } from '../app/asset-mangement-system-module/asset-details/asset-details.component';
 import { AddITAssetDetailsComponent } from '../app/asset-mangement-system-module/add-itasset-details/add-itasset-details.component';
@@ -51,8 +52,9 @@ import { ViewItAssetDetailsComponent } from './asset-mangement-system-module/vie
 import { ViewNonItAssetDetailsComponent } from './asset-mangement-system-module/view-non-it-asset-details/view-non-it-asset-details.component';
 import { ViewItAllocationDetailsComponent } from './asset-mangement-system-module/view-it-allocation-details/view-it-allocation-details.component';
 
-import { ModifyProfessionalDetailsComponent } from '../app/employee-module/modify-professional-details/modify-professional-details.component';
+import { BankDetailsComponent } from '../app/employee-module/BankDetails/bank-details/bank-details.component';
 import { ModifyPersonalDetailsComponent } from '../app/employee-module/modify-personal-details/modify-personal-details.component';
+import { ModifyProfessionalDetailsComponent } from '../app/employee-module/modify-professional-details/modify-professional-details.component';
 import { SearchEmployeeDetailsComponent } from '../app/employee-module/search-employee-details/search-employee-details.component';
 
 import { CommonCodeDetailsComponent } from '../app/common-code-module/common-code-details/common-code-details.component';
@@ -78,11 +80,9 @@ import { InvoiceRaiseComponent } from '../app/invoice-module/invoice-raise/invoi
 import { InvoiceRegeneratechooseComponent } from '../app/invoice-module/invoice-regeneratechoose/invoice-regeneratechoose.component';
 import { ReportComponent } from '../app/invoice-module/report/report.component';
 
-import{MarkDetailsComponent} from '../app/mark-module/mark-details/mark-details.component'
-import{RecallmilestoneComponent} from '../app/mark-module/recallmilestone/recallmilestone.component'
-import{SearchProjectDetailsComponent} from '../app/mark-module/search-project-details/search-project-details.component'
-
-import { ChangePasswordComponent } from './Password-module/change-password/change-password.component';
+import { MarkDetailsComponent } from '../app/mark-module/mark-details/mark-details.component'
+import { RecallmilestoneComponent } from '../app/mark-module/recallmilestone/recallmilestone.component'
+import { SearchProjectDetailsComponent } from '../app/mark-module/search-project-details/search-project-details.component'
 
 import { ApplyLeaveComponent } from '../app/request-module/apply-leave/apply-leave.component';
 import { ViewLeaveComponent } from '../app/request-module/view-leave/view-leave.component';
@@ -98,8 +98,8 @@ import { UnMarkLeaveComponent } from '../app/request-module/un-mark-leave/un-mar
 
 
 
+// --------------------------------    Jadhav  ------------------------------------------- 
 
-//  Jadhav Import  
 import { ReportBulkChooseComponent } from '../app/Report-module/report-bulk-choose/report-bulk-choose.component'
 import { ReportCompChooseComponent } from '../app/Report-module/report-comp-choose/report-comp-choose.component'
 import { ReportCompLeaveBalanceComponent } from '../app/Report-module/report-comp-leave-balance/report-comp-leave-balance.component'
@@ -118,10 +118,9 @@ import { SentMessageComponent } from './BirthdayMessage-module/sent-message/sent
 import { ComposeMessageComponent } from './BirthdayMessage-module/compose-message/compose-message.component';
 import { InboxMessageComponent } from './BirthdayMessage-module/inbox-message/inbox-message.component';
 
-import { BankDetailsComponent } from '../app/employee-module/BankDetails/bank-details/bank-details.component';
 
 import { ForgotpasswordComponent } from './Reset-module/ForgotPassword/forgotpassword/forgotpassword.component';
-
+import { ChangePasswordComponent } from './Reset-module/change-password/change-password.component';
 import { AppRejectedReqComponent } from './Travel-module/app-rejected-req/app-rejected-req.component';
 import { ApproveReqComponent } from './Travel-module/approve-req/approve-req.component';
 import { CancelTravelDetailsComponent } from './Travel-module/cancel-travel-details/cancel-travel-details.component';
@@ -129,7 +128,10 @@ import { CancelTravelQueueComponent } from './Travel-module/cancel-travel-queue/
 import { TravelComponent } from './Travel-module/travel/travel.component';
 import { TravelFAQDetailsComponent } from './Travel-module/travel-faqdetails/travel-faqdetails.component';
 import { ViewTravelApprQueueComponent } from './Travel-module/view-travel-appr-queue/view-travel-appr-queue.component';
-import { LoginComponent } from './login-module/login/login.component';
+
+
+
+import { TopbarComponent } from './common/topbar/topbar.component';
 
 
 
@@ -139,6 +141,7 @@ import { LoginComponent } from './login-module/login/login.component';
   declarations: [
     AppComponent,
 
+    LoginComponent,
     PersonalDetailsComponent,
     ProfessionalDetailsComponent,
     RegisterComponent,
@@ -166,6 +169,7 @@ import { LoginComponent } from './login-module/login/login.component';
     ViewAppraisalDataComponent,
     AppraisalSystemComponent,
 
+
     // Mahesh
 
     AddITAssetDetailsComponent,
@@ -182,7 +186,7 @@ import { LoginComponent } from './login-module/login/login.component';
     ViewItAllocationDetailsComponent,
 
 
-    CommonCodeDetailsComponent ,
+    CommonCodeDetailsComponent,
     CommonCodeDetailsDeleteComponent,
     CommonCodeDetailsModifyComponent,
     ViewCommonCodeComponent,
@@ -191,40 +195,40 @@ import { LoginComponent } from './login-module/login/login.component';
     ModifyPersonalDetailsComponent,
     SearchEmployeeDetailsComponent,
 
-      ConfigureLeavesComponent,
-      HolidaysComponent,
-      ListOfHolidaysComponent,
-      ModifyLeavesComponent,
-      RemoveLeavesComponent,
-      ListOfLeavesComponent,
+    ConfigureLeavesComponent,
+    HolidaysComponent,
+    ListOfHolidaysComponent,
+    ModifyLeavesComponent,
+    RemoveLeavesComponent,
+    ListOfLeavesComponent,
 
-      ChooseinvoiceDetailsComponent,
-      GenerateinrReportComponent,
-      GenerateusdReportComponent,
-      InvoicedueListComponent,
-      InvoicedueTodayComponent,
-      InvoiceFPComponent,
-      InvoicePayComponent,
-      InvoiceRaiseComponent,
-      InvoiceRegeneratechooseComponent,
-      ReportComponent,
+    ChooseinvoiceDetailsComponent,
+    GenerateinrReportComponent,
+    GenerateusdReportComponent,
+    InvoicedueListComponent,
+    InvoicedueTodayComponent,
+    InvoiceFPComponent,
+    InvoicePayComponent,
+    InvoiceRaiseComponent,
+    InvoiceRegeneratechooseComponent,
+    ReportComponent,
 
-      MarkDetailsComponent,
-      RecallmilestoneComponent,
-      SearchProjectDetailsComponent,
-      ChangePasswordComponent,
+    MarkDetailsComponent,
+    RecallmilestoneComponent,
+    SearchProjectDetailsComponent,
+
 
     ApplyLeaveComponent,
     ViewLeaveComponent,
     ApproveLeaveComponent,
-   LeaveBalanceComponent,
+    LeaveBalanceComponent,
     ViewHolidaysComponent,
     LeaveSummaryComponent,
     MarkLeaveComponent,
-     UnMarkLeaveComponent,
+    UnMarkLeaveComponent,
 
 
-     // Jadhav
+    // Jadhav
     ReportBulkChooseComponent,
     ReportCompChooseComponent,
     ReportCompLeaveBalanceComponent,
@@ -244,6 +248,7 @@ import { LoginComponent } from './login-module/login/login.component';
     BankDetailsComponent,
 
     ForgotpasswordComponent,
+    ChangePasswordComponent,
 
     AppRejectedReqComponent,
     ApproveReqComponent,
@@ -252,11 +257,13 @@ import { LoginComponent } from './login-module/login/login.component';
     TravelComponent,
     TravelFAQDetailsComponent,
     ViewTravelApprQueueComponent,
-    LoginComponent
+
+
+    // TopBar 
+    TopbarComponent
 
 
 
-    
   ],
   imports: [
     BrowserModule,
@@ -264,7 +271,7 @@ import { LoginComponent } from './login-module/login/login.component';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule
-    
+
   ],
   providers: [ApiserviceService],
   bootstrap: [AppComponent]

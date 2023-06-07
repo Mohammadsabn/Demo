@@ -12,7 +12,7 @@
   width: 240px;
   left: -240px;
   height: 100%;
-  margin-top: 75px;
+  margin-top: 52px;
   background: #1e1e1e;
   transition: all .5s ease;
   overflow-y: scroll;
@@ -61,7 +61,7 @@ label #btn,label #cancel{
   color: white;
   border-radius: 5px;
   border: 1px solid white;
-  margin: 15px 30px;
+  margin: 0px 30px;
   font-size: 29px;
   background: #24262b;
   height: 45px;
@@ -86,7 +86,7 @@ label #cancel{
 #check:checked ~ label #cancel{
   margin-left: 240px;
   opacity: 1;
-  margin-top: 83px;
+  margin-top: 58px;
   visibility: visible;
 }
 @media(max-width : 860px){

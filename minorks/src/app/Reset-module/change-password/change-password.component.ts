@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { FormControl,FormGroup,Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-change-password',
   templateUrl: './change-password.component.html',
   styleUrls: ['./change-password.component.css']
 })
 export class ChangePasswordComponent {
-  
+
   employeeId:any;
   change=new FormGroup<any>({
     currentPassword: new FormControl('', [Validators.required]),
@@ -24,4 +25,3 @@ export class ChangePasswordComponent {
     return this.submit
   }
 }
-

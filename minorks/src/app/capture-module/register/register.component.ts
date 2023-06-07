@@ -18,11 +18,9 @@ export class RegisterComponent implements OnInit {
     private http:HttpClient,
     private api:ApiserviceService){}
   output:any;
+
+
   ngOnInit(): void {
-  //   this.api.getuser().subscribe((res)=>{
-  //     console.log('get all',res);
-  //     this.output=res.data;
-  //   })
   }
 
 
@@ -34,10 +32,8 @@ export class RegisterComponent implements OnInit {
  login(item:any){
     console.log(item);
     if(item!=null){
-      this.router.navigate(['professionalDetails'])
+      this.router.navigate(['personalDetails'])
     }
-    
-
   
   }
 

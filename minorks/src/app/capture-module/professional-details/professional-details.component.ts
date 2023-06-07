@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import{FormGroup,ReactiveFormsModule,FormControl,FormControlDirective,Validators} from '@angular/forms';
 import{AddemployeeserviceService} from '../../services/addemployeeservice.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-professional-details',
@@ -8,8 +9,9 @@ import{AddemployeeserviceService} from '../../services/addemployeeservice.servic
   styleUrls: ['./professional-details.component.css']
 })
 export class ProfessionalDetailsComponent {
+  
 
-  constructor(private empdet:AddemployeeserviceService){}
+  constructor(private empdet:AddemployeeserviceService,private router:Router){}
   probation_Period = '';
   previous_Experience = '';
   professional_Details = new FormGroup<any>({
@@ -32,8 +34,11 @@ export class ProfessionalDetailsComponent {
   })
 
   ProfessionalDeatils(item: any) {
-    console.log(item)
-    this.empdet.insert(item)
+    console.log(item);
+    this.empdet.insert(item);
+    if(item!=null){
+      this.router.navigate(['message'])
+    }
     
   }
 

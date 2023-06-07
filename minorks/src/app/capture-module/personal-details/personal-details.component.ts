@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import{FormGroup,ReactiveFormsModule,FormControl,FormControlDirective,Validators} from '@angular/forms';
+import { Router } from '@angular/router';
+import { ApiserviceService } from 'src/app/apiservice.service';
 
 @Component({
   selector: 'app-personal-details',
@@ -9,6 +12,10 @@ import{FormGroup,ReactiveFormsModule,FormControl,FormControlDirective,Validators
 export class PersonalDetailsComponent {
   gender='';
   
+  constructor(private router:Router,
+    private http:HttpClient,
+    private api:ApiserviceService){}
+    
   Personal_Details = new FormGroup<any>({
     
     employeeId: new FormControl('', [Validators.required]),
@@ -35,12 +42,14 @@ export class PersonalDetailsComponent {
     adharCardNumber:new FormControl(''),
     drivingLicenceNumber:new FormControl(''),
     uanNumber:new FormControl('')
-
-
-
   });
+
   personalDetails(item: any) {
-    console.log(item)
+    console.log(item);
+    if(item!=null){
+      this.router.navigate(['professionalDetails'])
+    }
+  
   }
   communicationAddress:string='';
   parmanentAddress:string=' ';

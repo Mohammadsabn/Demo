@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 interface Message {
@@ -20,34 +21,39 @@ export class MessageComponent {
   recipient= '';
   content='';
 
-  constructor() {
+  constructor(private router:Router) {
     this.inbox = [];
     this.sentItems = [];
   }
 
-  composeMessage() {
+  onWish(){
+  this.router.navigateByUrl('/composeMessage');
+  }
+
+
+  // composeMessage() {
     
-    const message: Message = {
-      sender: 'Your Name',
-      recipient: this.recipient,
-      content: this.content,
-      timestamp: new Date()
-    };
+  //   const message: Message = {
+  //     sender: 'Your Name',
+  //     recipient: this.recipient,
+  //     content: this.content,
+  //     timestamp: new Date()
+  //   };
 
-    this.sentItems.push(message);
-    this.clearForm();
-  }
+  //   this.sentItems.push(message);
+  //   this.clearForm();
+  // }
 
-  deleteMessage(index: number, folder: string) {
-    if (folder === 'inbox') {
-      this.inbox.splice(index, 1);
-    } else if (folder === 'sent') {
-      this.sentItems.splice(index, 1);
-    }
-  }
+  // deleteMessage(index: number, folder: string) {
+  //   if (folder === 'inbox') {
+  //     this.inbox.splice(index, 1);
+  //   } else if (folder === 'sent') {
+  //     this.sentItems.splice(index, 1);
+  //   }
+  // }
 
-  private clearForm() {
-    this.recipient = '';
-    this.content = '';
-  }
+  // private clearForm() {
+  //   this.recipient = '';
+  //   this.content = '';
+  // }
 }

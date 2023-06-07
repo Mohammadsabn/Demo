@@ -12,19 +12,7 @@ interface Message {
 })
 
 export class MessageDataService {
-
-  // private message: Message;
-
-  // constructor() { }
   
-  // setMessage(message: Message) {
-  //   this.message = message;
-  // }
-
-  // getMessage(): Message {
-  //   return this.message;
-  // }
-
   private inbox: Message[] = [];
   private sentItems: Message[] = [];
 

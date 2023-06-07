@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     position: fixed;
     background-color: rgba(0, 0, 0, 0.219);
     width: 100%;
-    height: 100px;
+    height: 75px;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
   .user button {
     color: white;
     background-color: rgba(0, 0, 128, 0.836);
-    padding: 6px 16px;
+    padding: 2px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -50,8 +50,8 @@
   
   .profilePhoto input {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 15px;
     margin-top: 5px;
@@ -61,7 +61,7 @@
   
   .user i {
     margin: 10px 11px 0px 8px;
-    font-size: 33px;
+    font-size: 25px;
     color: red;
   }
   
@@ -106,7 +106,7 @@
     border-radius: 50%;
     color: white;
     text-decoration: none;
-    margin: -3px 0px 0px 0px;
+    margin: -10px 0px 0px 0px;
   }
   
   .navbar {
@@ -162,4 +162,64 @@
     }
 }
 
-   
+
+
+
+
+/* Search Icon */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.searchBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox input{
+  background-color: rgb(48,168,220);
+  border: none;
+  outline: none;
+  width: 0;
+  padding: 0; 
+  opacity: 0;
+  border-radius: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  transition: all 1s;
+}
+
+.searchBox input::placeholder {
+  color: rgba(255,255,255,.5);
+  font-weight: 400;
+}
+
+.searchBox i {
+  background-color: rgb(48,168,220);
+  width: 40px;
+  height: 40px;
+  padding: 9px 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.searchBox:hover input{
+  width: 240px;
+  opacity: 1;
+  padding: 10px 20px;
+}
+
+.searchBox:hover i{
+  color: #fff;
+}

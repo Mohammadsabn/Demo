@@ -1,0 +1,23 @@
+.top-bar {
+    background-color: rgb(9, 9, 9);
+    padding: 15px;
+    margin-top: 52px;
+}
+
+.button-aling {
+    margin-left: 1000px;
+}
+
+.top-bar-button {
+    background-color: #070707;
+    border: none;
+    color: #fcf8f8;
+    padding: 5px 10px;
+    margin-right: 70px;
+    cursor: pointer;
+    border-radius: 78px;
+}
+
+.top-bar-button:hover {
+    background-color: #d36934;
+}
