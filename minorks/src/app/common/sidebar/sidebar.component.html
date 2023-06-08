@@ -8,35 +8,46 @@
     <div class="sidebar">
         <header> Menu</header>
 
-        <a id="dsh" href="#" class="active">
+       <!--/////////////  Abhi ////////// -->
+        <!-- <a id="dsh" href="#" class="active" >   
+            <span></span>
+        </a> -->
+        
+        <a id="apr" (click)="getID('dsh')" >
             <i class="fas fa-qrcode"></i>
             <span>Dashboard</span>
         </a>
-        <a id="apr">
+        <a id="apr" (click)="getID('apr')" >
             <i class="fas fa-link"></i>
             <span>Appraisal</span>
+        </a>
+
+        <a id="emp" (click)="getID('emp')">
+            <i class="far fa-envelope"></i>
+            <span>Employee </span>
+        </a>
+        <a id="pjt">
+            <i class="far fa-envelope"></i>
+            <span>Project</span>
+        </a>
+        <a id="rmb" (click)="getID('rmb')">
+            <i class="far fa-envelope"></i>
+            <span>Reimbusment </span>
         </a>
         <a id="cms">
             <i class="fas fa-stream"></i>
             <span>CMS</span>
+        </a>    
+        <a id="req">
+            <i class="far fa-envelope"></i>
+            <span>Request</span>
         </a>
-      
-        <a id="cpt">
-            <i class="far fa-question-circle"></i>
-            <span>Capture</span>
-        </a>
+
+
+        <!--/////////////////////    Mahesh  ////////////////////////-->
         <a id="ast">
             <i class="fas fa-sliders-h"></i>
             <span>Assets</span>
-        </a>
-        
-        <a id="cocd">
-            <i class="far fa-envelope"></i>
-            <span>Common Code</span>
-        </a>
-        <a id="emp">
-            <i class="far fa-envelope"></i>
-            <span>Employee </span>
         </a>
         <a id="hol">
             <i class="far fa-envelope"></i>
@@ -46,43 +57,31 @@
             <i class="far fa-envelope"></i>
             <span>Invoice</span>
         </a>
-        <a id="log">
-            <i class="far fa-envelope"></i>
-            <span>Login</span>
-        </a>
         <a id="mrk">
             <i class="far fa-envelope"></i>
             <span>Mark</span>
         </a>
-        <a id="pjt">
+        <a id="cocd">
             <i class="far fa-envelope"></i>
-            <span>Project</span>
+            <span>Common Code</span>
         </a>
-        <a id="rmb">
-            <i class="far fa-envelope"></i>
-            <span>Reimbusment </span>
-        </a>
-       
-        <a id="req">
-            <i class="far fa-envelope"></i>
-            <span>Request</span>
-        </a>
+
+
+
+        <!--/////////////////////    Jadhav ////////////////////////////-->
         
-
-
-
-        <!-- Jadhav -->
-        
+        <a id="cpt">
+            <i class="far fa-question-circle"></i>
+            <span>Capture</span>
+        </a>
         <a id="arn">
             <i class="far fa-envelope"></i>
             <span>App Renovated</span>
         </a>
         <a id="brd" [routerLink]="['/message']" >
-            <i class="fi fi-rr-cake-birthday"></i>
+            <i class="far fa-envelope"></i>
             <span>Birthaday</span>
         </a>
-        
-        <button class="btn btn-primary">Click me</button>
 
         <a id="rpt">
             <i class="far fa-envelope"></i>

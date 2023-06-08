@@ -132,6 +132,7 @@ import { ViewTravelApprQueueComponent } from './Travel-module/view-travel-appr-q
 
 
 import { TopbarComponent } from './common/topbar/topbar.component';
+import { DashboardComponent } from './login-module/dashboard/dashboard.component';
 
 
 
@@ -260,7 +261,8 @@ import { TopbarComponent } from './common/topbar/topbar.component';
 
 
     // TopBar 
-    TopbarComponent
+    TopbarComponent,
+        DashboardComponent
 
 
 

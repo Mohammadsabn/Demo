@@ -1,8 +1,82 @@
-<div class="top-bar">
-    <div class="button-aling">
-    <button class="top-bar-button" (click)="goToCompose()">Compose</button>
-    <button class="top-bar-button" (click)="goToInbox()">Inbox</button>
-    <button class="top-bar-button" (click)="goToSent()">Sent Messages</button>
-  </div>
-</div>
+<div class="top-bar" [ngSwitch]="data">
+  <nav class="menu">
+      <!-- Appraisal Module -->
+      <div class="top-content" *ngSwitchCase="'apr'">
+          <ul>
+              <li><a routerLink="/addappraisal">Add Apraisal</a></li>
+              <li><a  routerLink="/appraisalcomponent">Appraisal</a></li>
+              <li><a  routerLink="/appraisalsystem">Appraisal System</a></li>
+              <li><a  routerLink="/doappraisal">Do Appraisal</a></li>
+              <li><a  routerLink="/rejectappraisal">Rejected Appraisal</a></li>
+              <li><a  routerLink="/viewapldata">View Appraisal data</a></li>
+              <li><a routerLink="/viewaprl">View Appraisal</a></li>
+
+          </ul>
+      </div>
+  </nav>
+<!-- Birthaday Module  -->
+  <nav class="menu">
+      <!-- Appraisal Module -->
+      <div class="top-content" *ngSwitchCase="'brd'">
+          <ul>
+              <li><a href="" routerLink="/ItAssetDetails">Compose Message</a></li>
+              <li><a href="" routerLink="/ModifyItAssetDetails">Inbox</a></li>
+              <li><a href="" routerLink="/ViewItAssetDetails">Sent Message</a></li>
+              
+          </ul>
+      </div>
+  </nav>
+
+<!-- Capture Module  -->
+  <nav class="menu">
+      <!-- Appraisal Module -->
+      <div class="top-content" *ngSwitchCase="'cpr'">
+          <ul>
+              <li><a href="" routerLink="/ItAssetDetails">Personal Details</a></li>
+              <li><a href="" routerLink="/ModifyItAssetDetails">Professional Details</a></li>
+              <li><a href="" routerLink="/ViewItAssetDetails">Register</a></li>
+              
+          </ul>
+      </div>
+  </nav>
+<!-- cms Module  -->
+  <nav class="menu">
+      <!-- Appraisal Module -->
+      <div class="top-content" *ngSwitchCase="'cms'">
+          <ul>
+              <li><a href="" routerLink="/ItAssetDetails">CMS Upload Admin</a></li>
+              <li><a href="" routerLink="/ModifyItAssetDetails">Magzine Upload Admin</a></li>
+              <li><a href="" routerLink="/ViewItAssetDetails">Policy Upload Admin</a></li>
+              
+          </ul>
+      </div>
+  </nav>
+
+<!-- reimbusment Module -->
+  <nav class="menu"> 
+      <div class="top-content" *ngSwitchCase="'rmb'">
+          <ul>
+              <li><a href="" routerLink="/initiaterem">Initiate rem</a></li>
+              <li><a href="" routerLink="/reimbusmentapprove">Reimbusment approve</a></li>   
+          </ul>
+      </div>
+  </nav>
+
+<!-- Employee module -->
+  <nav class="menu"> 
+      <div class="top-content" *ngSwitchCase="'emp'">
+          <ul>
+              <li><a href="" routerLink="/bankdetails">Bank details</a></li>
+              <li><a href="" routerLink="/modifypersonal">Modify Personal details</a></li>  
+              <li><a href="" routerLink="/modifyprofessional">Modify Professional details</a></li> 
+              <li><a href="" routerLink="/searchmodify">Search Employee details</a></li> 
+               
+          </ul>
+      </div>
+  </nav>
+
+
+
   
+</div>
+
