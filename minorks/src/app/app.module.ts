@@ -32,9 +32,8 @@ import { AddAppraisalComponent } from './appraisal-module/add-appraisal/add-appr
 import { AppraisalComponent } from '../app/appraisal-module/appraisal/appraisal.component';
 import { RejectedAppraisalComponent } from './appraisal-module/rejected-appraisal/rejected-appraisal.component';
 import { ViewappraisalComponent } from './appraisal-module/viewappraisal/viewappraisal.component';
-// import { DoAppraisalComponent } from './appraisal-module/do-appraisal/do-appraisal.component';
+import { AprDoappraisalComponent } from './appraisal-module/apr-doappraisal/apr-doappraisal.component';
 import { ViewAppraisalDataComponent } from '../app/appraisal-module/view-appraisal-data/view-appraisal-data.component';
-import { AppraisalSystemComponent } from '../app/appraisal-module/appraisal-system/appraisal-system.component'
 
 
 // --------------------------------    Mahesh ------------------------------------------- 
@@ -166,9 +165,9 @@ import { DashboardComponent } from './login-module/dashboard/dashboard.component
     AppraisalComponent,
     RejectedAppraisalComponent,
     ViewappraisalComponent,
-    DoAppraisalComponent,
     ViewAppraisalDataComponent,
-    AppraisalSystemComponent,
+    AprDoappraisalComponent,
+    
 
 
     // Mahesh
@@ -262,7 +261,7 @@ import { DashboardComponent } from './login-module/dashboard/dashboard.component
 
     // TopBar 
     TopbarComponent,
-        DashboardComponent
+     DashboardComponent
 
 
 

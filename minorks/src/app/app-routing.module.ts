@@ -22,17 +22,17 @@ import { ViewTravelApprQueueComponent } from './Travel-module/view-travel-appr-q
 import { DashboardComponent } from './login-module/dashboard/dashboard.component';
 import { AddAppraisalComponent } from './appraisal-module/add-appraisal/add-appraisal.component';
 import { AppraisalComponent } from './appraisal-module/appraisal/appraisal.component';
-import { DoAppraisalComponent } from './appRenovated-module/do-appraisal/do-appraisal.component';
-import { AppraisalSystemComponent } from './appraisal-module/appraisal-system/appraisal-system.component';
 import { RejectedAppraisalComponent } from './appraisal-module/rejected-appraisal/rejected-appraisal.component';
 import { ViewAppraisalDataComponent } from './appraisal-module/view-appraisal-data/view-appraisal-data.component';
 import { ViewappraisalComponent } from './appraisal-module/viewappraisal/viewappraisal.component';
+//bank details
 import { BankDetailsComponent } from './employee-module/BankDetails/bank-details/bank-details.component';
 import { ModifyPersonalDetailsComponent } from './employee-module/modify-personal-details/modify-personal-details.component';
 import { ModifyProfessionalDetailsComponent } from './employee-module/modify-professional-details/modify-professional-details.component';
 import { SearchEmployeeDetailsComponent } from './employee-module/search-employee-details/search-employee-details.component';
 import { InitiateRemComponent } from './reimbusment-mdule/initiate-rem/initiate-rem.component';
 import { ReimburseApproveComponent } from './reimbusment-mdule/reimburse-approve/reimburse-approve.component';
+import { AprDoappraisalComponent } from './appraisal-module/apr-doappraisal/apr-doappraisal.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -48,9 +48,8 @@ const routes: Routes = [
 //appraisal
 {path:'addappraisal',component:AddAppraisalComponent},
 {path:'appraisalcomponent',component:AppraisalComponent} ,
-{path:'appraisalsystem',component:AppraisalSystemComponent},
-{path:'doappraisal',component:DoAppraisalComponent},
-{path:'rejectappraisal',component:RejectedAppraisalComponent},
+{path:'doappraisal',component:AprDoappraisalComponent},
+{path:'rejapr',component:RejectedAppraisalComponent},
 {path:'viewapldata',component:ViewAppraisalDataComponent},
 {path:'viewaprl',component:ViewappraisalComponent},
 

@@ -1,19 +1,47 @@
 <div class="top-bar" [ngSwitch]="data">
   <nav class="menu">
+
       <!-- Appraisal Module -->
       <div class="top-content" *ngSwitchCase="'apr'">
           <ul>
               <li><a routerLink="/addappraisal">Add Apraisal</a></li>
               <li><a  routerLink="/appraisalcomponent">Appraisal</a></li>
-              <li><a  routerLink="/appraisalsystem">Appraisal System</a></li>
               <li><a  routerLink="/doappraisal">Do Appraisal</a></li>
-              <li><a  routerLink="/rejectappraisal">Rejected Appraisal</a></li>
+              <li><a  routerLink="/rejapr">Rejected Appraisal</a></li>
               <li><a  routerLink="/viewapldata">View Appraisal data</a></li>
               <li><a routerLink="/viewaprl">View Appraisal</a></li>
 
           </ul>
       </div>
   </nav>
+  
+<!-- reimbusment Module -->
+<nav class="menu"> 
+    <div class="top-content" *ngSwitchCase="'rmb'">
+        <ul>
+            <li><a href="" routerLink="/initiaterem">Initiate Reimbursement</a></li>
+            <li><a href="" routerLink="/reimbusmentapprove">Reimbusment Approve</a></li>   
+        </ul>
+    </div>
+</nav>
+
+<!-- Employee module -->
+<nav class="menu"> 
+    <div class="top-content" *ngSwitchCase="'emp'">
+        <ul>
+            <li><a href="" routerLink="/bankdetails">Bank details</a></li>
+            <li><a href="" routerLink="/modifypersonal">Modify Personal details</a></li>  
+            <li><a href="" routerLink="/modifyprofessional">Modify Professional details</a></li> 
+            <li><a href="" routerLink="/searchmodify">Search Employee details</a></li> 
+             
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- Jadhav -->
+
 <!-- Birthaday Module  -->
   <nav class="menu">
       <!-- Appraisal Module -->
@@ -52,28 +80,6 @@
       </div>
   </nav>
 
-<!-- reimbusment Module -->
-  <nav class="menu"> 
-      <div class="top-content" *ngSwitchCase="'rmb'">
-          <ul>
-              <li><a href="" routerLink="/initiaterem">Initiate rem</a></li>
-              <li><a href="" routerLink="/reimbusmentapprove">Reimbusment approve</a></li>   
-          </ul>
-      </div>
-  </nav>
-
-<!-- Employee module -->
-  <nav class="menu"> 
-      <div class="top-content" *ngSwitchCase="'emp'">
-          <ul>
-              <li><a href="" routerLink="/bankdetails">Bank details</a></li>
-              <li><a href="" routerLink="/modifypersonal">Modify Personal details</a></li>  
-              <li><a href="" routerLink="/modifyprofessional">Modify Professional details</a></li> 
-              <li><a href="" routerLink="/searchmodify">Search Employee details</a></li> 
-               
-          </ul>
-      </div>
-  </nav>
 
 
 

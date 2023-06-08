@@ -1,6 +1,6 @@
 <app-headder></app-headder>
-<app-sidebar></app-sidebar>
 <app-topbar></app-topbar>
+<app-sidebar></app-sidebar>
 
 <div class="allighn">
 
@@ -32,8 +32,6 @@
                         <td></td>
                         <td></td>
                         <td> </td>
-                        <td>
-                        <td>
                     </tr>
 
                 </tbody>
@@ -44,11 +42,12 @@
 
     </div>
 </div>
+
 <div class="allighn">
     <div class=" table-container">
         <h5 class="tittle"> Appraisal submitted successfully for the month </h5>
-<hr>
-        <form class="#"  [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
+        <hr>
+        <form class="#" [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
             <table class="table">
                 <thead>
                     <tr>
@@ -63,70 +62,74 @@
                     <tr>
                         <th scope="row">Ability at the position</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="abilityRemarks1" formControlName="abilityRemarks1"></textarea></td>
                         <td> </td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="abilityRemarks2" formControlName="abilityRemarks2"></textarea></td>
                     </tr>
                     <tr>
                         <th scope="row">Attendance</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="attendence" formControlName="attendence"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="attendanceRemarks"  formControlName="attendanceRemarks" ></textarea></td>
+                        <td><textarea name="attendence1" formControlName="attendence1"></textarea></td>
 
                     </tr>
                     <tr>
                         <th scope="row">Leadership Ability</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="ledablty" formControlName="ledablty"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="leadershipAbilityRemarks" fromControlName="leadershipAbilityRemarks"  ></textarea></td>
+                        <td><textarea name="ledabltyRmks"
+                                fromControlName="ledabltyRmks"></textarea></td>
 
                     </tr>
                     <tr>
                         <th scope="row">Ability to meet deadlines</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="meetdead" formControlName="meetdead"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="deadlinesRemarks" formControlName="deadlinesRemarks" ></textarea></td>
+                        <td><textarea name="meetdeadRmks" formControlName="meetdeadRmks"></textarea></td>
 
                     </tr>
                     <tr>
                         <th scope="row">Technical Skills</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="tecskill" formControlName="tecskill"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="technicalSkillRemarks"  formControlName="technicalSkillRemarks" ></textarea></td>
+                        <td><textarea name="tecskillRmks" formControlName="tecskillRmks"></textarea>
+                        </td>
 
                     </tr>
                     <tr>
                         <th scope="row">Quality of Work</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="qltwrk" formControlName="qltwrk"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="qualityOfWorkRemarks" formControlName="qualityOfWorkRemarks" ></textarea></td>
+                        <td><textarea name="qltwrkRmks" formControlName="qltwrkRmks"></textarea>
+                        </td>
 
                     </tr>
                     <tr>
                         <th scope="row">Team Work Ability</th>
                         <td></td>
-                        <td><textarea name="abilityRemarks"formControlName="abilityRemarks" ></textarea></td>
+                        <td><textarea name="temwrk" formControlName="temwrk"></textarea></td>
 
                         <td></td>
-                        <td><textarea name="teamWorkAbilityRemarks" formControlName="teamWorkAbilityRemarks"  ></textarea></td>
+                        <td><textarea name="temwrkRmks" formControlName="temwrkRmks"></textarea>
+                        </td>
 
                     </tr>
                 </tbody>
 
             </table>
-            
+
         </form>
-        <div class="content"  style="margin-left: 20px;">
+        <div class="content" style="margin-left: 20px;">
             <div></div>
             <form class="#" [formGroup]="rejected_Appraisel" (ngSubmit)="rejectedAppraisel(rejected_Appraisel.value)">
                 <div class="user-details">
@@ -135,40 +138,43 @@
                         <label class="Details">
                             Employee Concerns/Comments </label>
                         <div>
-                            <input style="width: 70%;" type="text" placeholder="Employee Comments" name="employeeComments" formControlName="employeeComments">
+                            <input style="width: 70%;" type="text" placeholder="Employee Comments"
+                                name="employeeComments" formControlName="employeeComments">
                         </div>
                     </div>
                     <div class="input-box">
                         <label class="Details">Future Goals</label>
                         <div>
-                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals" formControlName="futureGoals">
+                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals"
+                                formControlName="futureGoals">
                         </div>
                     </div>
                     <div class="input-box">
                         <label class="Details">Appraiser Comments</label>
                         <div>
-                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals" formControlName="futureGoals">
+                            <input style="width: 70%;" type="text" placeholder="Future Goals" name="futureGoals1"
+                                formControlName="futureGoals1">
                         </div>
                     </div>
                     <div class="input-box">
-                        <label class="Details">Appraisal approved by  </label>
+                        <label class="Details">Appraisal approved by </label>
                         <div>
-                            <input style="width: 70%;" type="text" placeholder="Appraisal approved by" name="futureGoals" formControlName="futureGoals">
+                            <input style="width: 70%;" type="text" placeholder="Appraisal approved by"
+                                name="futureGoals2" formControlName="futureGoals2">
                         </div>
                     </div>
-                    
-                    
+
+
                     <div>
                         <button class="button">Submit</button>
-                        <button class="button" >Back</button>
+                        <button class="button">Back</button>
                     </div>
-                    
+
                 </div>
 
 
             </form>
         </div>
-
     </div>
-</div>
+</div> 
 <app-footer></app-footer>

@@ -37,7 +37,7 @@ export class ProfessionalDetailsComponent {
     console.log(item);
     this.empdet.insert(item);
     if(item!=null){
-      this.router.navigate(['message'])
+      this.router.navigate(['dashboard'])
     }
     
   }
@@ -45,4 +45,5 @@ export class ProfessionalDetailsComponent {
   get employeeId() {
     return this.professional_Details.get('employeeId')
   }
+  
 }

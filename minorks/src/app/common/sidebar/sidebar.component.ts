@@ -25,7 +25,6 @@ export class SidebarComponent {
     }
 
     if(item=='apr'){
-
       this.router.navigate(['addappraisal'])
     }
     if (item=='brd') {
@@ -38,7 +37,7 @@ export class SidebarComponent {
       this.router.navigate(['initiaterem'])
     }
     if(item=='emp'){
-      this.router.navigate(['bankdetails`'])
+      this.router.navigate(['bankdetails'])
     }
   }
 }
