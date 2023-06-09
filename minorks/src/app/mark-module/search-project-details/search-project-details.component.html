@@ -1,3 +1,6 @@
+<app-headder></app-headder>
+
+<app-sidebar></app-sidebar>
 <div class="container">
     <h1 class="title">Search Project Details</h1>
     <div class="table-content">
@@ -9,9 +12,10 @@
                 </div>
             </div>
             <div class="button-group">
-                <button type="submit" class="button">Search</button>
+                <button type="submit" class="button"  (click)="route()" >Search</button>
                 <button type="reset" class="button">Clear</button>
             </div>
         </form>
     </div>
 </div>
+<app-footer></app-footer>

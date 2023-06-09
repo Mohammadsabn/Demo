@@ -25,6 +25,7 @@
   background: #1b1b1b;
   user-select: none;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 .sidebar a{
   display: block;
@@ -39,13 +40,16 @@
   border-left: 5px solid transparent;
   font-family: 'Open Sans', sans-serif;
   transition: all .5s ease;
+  cursor: pointer;
+  justify-content: space-between;
+
 }
 a.active,a:hover{
   border-left: 5px solid #b93632;
   color: #b93632;
 }
 .sidebar a i{
-  font-size: 23px;
+  font-size: 22px;
   margin-right: 16px;
 }
 .sidebar a span{

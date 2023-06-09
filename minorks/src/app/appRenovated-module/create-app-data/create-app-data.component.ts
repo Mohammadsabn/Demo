@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-app-data',
@@ -7,6 +9,34 @@ import { Component } from '@angular/core';
 })
 export class CreateAppDataComponent {
 
+  constructor(private router:Router){}
+  employeeName = '';
+
+  ctrapp = new FormGroup<any>({
+
+    employeeName: new FormControl(''),
+    employeeName1: new FormControl(''),
+   
+  })
+
+
+
+ createApp(item: any) {
+    console.log(item);
+  }
+
+
+
+
+
+
+
+
+  register=new FormGroup<any>({
+    employeeName: new FormControl('', ),
+    employeeName1:new FormControl('')
+
+  })
   pkpi = [
     {  Indicator: 'No Record Found', Weightage: 'No Record Found', Role: 'No Record Found' },
   ];

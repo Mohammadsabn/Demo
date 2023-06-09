@@ -6,7 +6,7 @@
 
 nav {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.219);
+  background-color: black;
   width: 100%;
   height: 75px;
   padding: 10px;
@@ -46,7 +46,7 @@ nav {
   font-weight: bold;
   font-size: 22px;
   margin: 14px 7px 0px 0px;
-  color:  #050505;
+  color:  white ;
 }
 
 .profilePhoto input {
@@ -62,7 +62,7 @@ background-image: url(../../../assets/images/profileDefult.webp);
 
 .user .search_icon i {
   margin: 10px 11px 0px 8px;
-  font-size: 18px;
+  font-size: 27px;
   color: rgb(249, 246, 246);
   margin-top: 7px;
 }
@@ -74,7 +74,7 @@ background-image: url(../../../assets/images/profileDefult.webp);
   margin-top: 20px; */
   margin: 10px 11px 0px 17px;
   font-size: 27px;
-  color: rgb(247, 44, 8);
+  color:rgb(211 59 30);
   margin-top: 15px;
 }
 
@@ -87,20 +87,23 @@ background-image: url(../../../assets/images/profileDefult.webp);
   padding: 10px; */
   margin: 8px 22px 9px 25px;
   height: 40px;
-  background-color: #050505;
+  background-color:black;
   border-radius: 50px;
   padding: 8px;
 }
 
 .search_input {
-  color: white;
+  color: #333;
   border: 0;
   outline: 0;
   background: none;
   width: 0;
   caret-color: transparent;
   line-height: 40px;
+  background-color:white;
   transition: width 0.4s linear;
+  border-radius: 50px;
+  margin-top:-30px
 }
 
 .searchbar:hover > .search_input {
@@ -111,7 +114,7 @@ background-image: url(../../../assets/images/profileDefult.webp);
 }
 
 .searchbar:hover > .search_icon {
-  background: rgb(12, 184, 232);
+  background:black;
   color: #20c644;
 }
 
@@ -125,7 +128,7 @@ background-image: url(../../../assets/images/profileDefult.webp);
   border-radius: 50%;
   color: white;
   text-decoration: none;
-  margin: -8px -9px 1px 2px;
+  margin: -14px -9px 1px 2px;
 }
 
 .navbar {

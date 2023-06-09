@@ -25,6 +25,51 @@ export class NavserviceService {
     else if (Item=='emp'){
       this.res = "emp"
     }
+    else if(Item=='cocd'){
+      this.res="cocd"
+    }
+    else if(Item=='ast'){
+      this.res="ast"
+    }
+    else if(Item=='hol'){
+      this.res="hol"
+    }
+    else if(Item=='inv'){
+      this.res="inv"
+    }
+    else if(Item=='mrk'){
+      this.res="mrk"
+    }
+    else if(Item=='rpt'){
+      this.res="rpt"
+    }
+    else if (Item == "res") {
+      this.res = "res";
+    }    
+    else if (Item == "brd") {
+      this.res = "brd"
+    } 
+    else if (Item=='tvl'){
+      this.res = "tvl"
+    }
+    else if (Item=='arn'){
+      this.res = "arn"
+    }
+    else if (Item=='req'){
+      this.res = "req"
+    }
+    else if (Item=='cms'){
+      this.res = "cms"
+    }
+    else if(Item=='ast'){
+      this.res="ast"
+    }
+    else if(Item=='allast'){
+      this.res="allast"
+    }
+    else if(Item=='nonast'){
+      this.res="nonast"
+    }
   }
 
   
@@ -33,6 +78,4 @@ export class NavserviceService {
   }
 
 }
-function returrnAns() {
-  throw new Error('Function not implemented.');
-}
+

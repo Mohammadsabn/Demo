@@ -18,26 +18,69 @@ export class SidebarComponent {
   getID(item: string) {
     console.log(item);
     this.service.get(item)
-    
-    if(item=='dsh'){
+
+    if (item == 'dsh') {
 
       this.router.navigate(['dashboard'])
     }
 
-    if(item=='apr'){
+    if (item == 'apr') {
       this.router.navigate(['addappraisal'])
     }
-    if (item=='brd') {
+    if (item == 'brd') {
       this.router.navigate(['message'])
-    } 
-    if(item=='cms'){
+    }
+    if (item == 'cms') {
       this.router.navigate(['cmsuploadadmin'])
     }
-    if(item=='rmb'){
+    if (item == 'rmb') {
       this.router.navigate(['initiaterem'])
     }
-    if(item=='emp'){
+    if (item == 'emp') {
       this.router.navigate(['bankdetails'])
+    }
+    if (item == 'cocd') {
+      this.router.navigate(['cocd'])
+    }
+
+    if (item == 'ast') {
+      this.router.navigate(['AssetDetails'])
+    }
+
+    if (item == 'hol') {
+      this.router.navigate(['addHolidays'])
+    }
+    if (item == 'inv') {
+      this.router.navigate(['chooseinvoice'])
+    }
+    if (item == 'mrk') {
+      this.router.navigate(['searchMrk'])
+    }
+
+    if (item == 'rpt') {
+      this.router.navigate(['ReportChooseComponent'])
+    }
+    if (item == 'res') {
+      this.router.navigate(['changePassword'])
+    }
+    if (item == 'brd') {
+      this.router.navigate(['message'])
+    }
+    if (item == 'tvl') {
+      this.router.navigate(['travel'])
+    }
+    if (item == 'arn') {
+      this.router.navigate(['cteApp'])
+    }
+    if (item == 'pjt') {
+      this.router.navigate(['childproject'])
+    }
+
+    if (item == 'req') {
+      this.router.navigate(['applyLev'])
+    }
+    if (item == 'cms') {
+      this.router.navigate(['cmsUpload'])
     }
   }
 }

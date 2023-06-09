@@ -8,9 +8,9 @@ describe('GenerateinrReportComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenerateinrReportComponent ]
+      declarations: [GenerateinrReportComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(GenerateinrReportComponent);
     component = fixture.componentInstance;
@@ -20,4 +20,6 @@ describe('GenerateinrReportComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  
 });

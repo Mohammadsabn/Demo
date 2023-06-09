@@ -8,9 +8,9 @@ import { SearchProjectDetailsComponent } from './search-project-details/search-p
 
 @NgModule({
   declarations: [
-    MarkDetailsComponent,
-    RecallmilestoneComponent,
-    SearchProjectDetailsComponent
+    // MarkDetailsComponent,
+    // RecallmilestoneComponent,
+    // SearchProjectDetailsComponent
   ],
   imports: [
     CommonModule

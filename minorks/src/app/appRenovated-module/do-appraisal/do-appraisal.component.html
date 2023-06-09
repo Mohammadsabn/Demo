@@ -1,3 +1,6 @@
+<app-headder></app-headder>
+<app-topbar></app-topbar>
+<app-sidebar></app-sidebar>
 <h1 class="title">Complete your appraisal for the month</h1> <br><br>
 <br><br>
 <div class="tablecontainer">
@@ -10,20 +13,20 @@
                 <th>Rating</th>
                 <th>Remarks</th>
             </tr>
-        </thead>  
+        </thead>
         <tbody>
             <tr>
                 <td><input class="serchdata" type="text" name="Indicators"></td>
                 <td><input class="serchdata" type="text" name="Weightage"></td>
                 <td>
                     <select class="tableselect">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
-                  </td>
+                </td>
                 <td><input class="serchdata" type="text" name="Remarks"></td>
             </tr>
         </tbody>
@@ -50,13 +53,13 @@
                 <td><input class="serchdata" type="text" name="Weightage"></td>
                 <td>
                     <select class="tableselect">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
-                  </td>
+                </td>
                 <td><input class="serchdata" type="text" name="Remarks"></td>
             </tr>
         </tbody>
@@ -67,16 +70,16 @@
 <br><br>
 
 <form class="#" [formGroup]="employee_comment" (ngSubmit)="comment(employee_comment.value)">
-<div class="user-details">
-    <div class="input-box">
-        <label class="details">Employee Concerns/Comments :</label> <br>
-        <input type="text" name="comment" formControlName="comment" required>
+    <div class="user-details">
+        <div class="input-box">
+            <label class="details">Employee Concerns/Comments :</label> <br>
+            <input type="text" name="comment" formControlName="comment" required>
+        </div>
+        <div class="input-box">
+            <label class="">Future Goals :</label> <br>
+            <input type="text" name="goals" formControlName="goals" required>
+        </div>
     </div>
-    <div class="input-box">
-        <label class="">Future Goals :</label> <br>
-        <input type="text" name="goals" formControlName="goals" required>
-    </div>
-</div>
 </form>
 
 <h3 class="headding">To be approved by : Arkesh</h3> <br>
@@ -84,3 +87,4 @@
     <button class="button" type="reset">cancel</button>
     <button class="button" type="reset">Submit</button>
 </div>
+<app-footer></app-footer>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./generateusd-report.component.css']
 })
 export class GenerateusdReportComponent {
-
+  printPage(){
+    window.print();
+  }
 }

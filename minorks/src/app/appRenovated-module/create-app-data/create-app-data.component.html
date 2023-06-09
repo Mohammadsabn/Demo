@@ -1,4 +1,8 @@
-<form>
+<app-headder></app-headder>
+    <app-topbar></app-topbar>
+    <app-sidebar></app-sidebar>
+<form class="#" [formGroup]="ctrapp" (ngSubmit)="createApp(ctrapp.value)">
+    <div class="tablecontainer">
     <div class="tablecontainer">
         <h1 class="title">Professional KPI</h1>
         <div class="contentleft">
@@ -40,7 +44,7 @@
         <h1 class="title"> Behavioural KPI</h1>
         <div class="contentleft">
             <label>Search:</label>
-            <input type="text" name="employeeName" formControlName="employeeName" class="serchdata" placeholder="">
+            <input type="text" name="employeeName1" formControlName="employeeName1" class="serchdata" placeholder="">
         </div> <br><br>
 
         <span>Show </span>
@@ -69,5 +73,7 @@
         </table>
         <br>
     </div>
-
+</div>
 </form>
+
+<app-footer></app-footer>
