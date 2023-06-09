@@ -3,11 +3,11 @@
 <app-sidebar></app-sidebar>
 <div class="container">
     <h1 class="title">Search Project Details</h1>
-    <div class="table-content">
+    
         <form [formGroup]="searchForm" (ngSubmit)="onSubmit(searchForm.value)">
             <div class="user-details">
                 <div class="input-box">
-                    <label for="projectId" class="details">Project Id</label>
+                    <!-- <label for="projectId" class="details">Project Id</label> -->
                     <input type="number" placeholder="Project Id" name="projectId" formControlName="projectId" />
                 </div>
             </div>
@@ -17,5 +17,5 @@
             </div>
         </form>
     </div>
-</div>
+
 <app-footer></app-footer>

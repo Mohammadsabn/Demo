@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-generateinr-report',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
 })
 export class GenerateinrReportComponent {
 
+ 
+
+  constructor(private route:Router){}
   printPage(){
     window.print();
   }
+
+  
+ close(){
+      this.route.navigate(['chooseinvoice'])
+    }
+
 }

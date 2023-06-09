@@ -50,19 +50,14 @@
                 </pagination-controls>
             </div> -->
             
+            
             <div>
                 <button (click)="goToFirstPage()" [disabled]="currentPage === 1" class="listbutton">First</button>
                 <button (click)="goToPreviousPage()" [disabled]="currentPage === 1" class="listbutton">Previous</button>
                 <span>Page {{ currentPage }} of {{ totalPages }}</span>
                 <button (click)="goToNextPage()" [disabled]="currentPage === totalPages" class="listbutton" >Next</button>
                 <button (click)="goToLastPage()" [disabled]="currentPage === totalPages" class="listbutton" >Last</button>
-              </div>
-              
-                <div>
-                    <button class="button">Back</button>
-                    
-                </div>
-            
+              </div>    
         </div>
     </div>
 </form>

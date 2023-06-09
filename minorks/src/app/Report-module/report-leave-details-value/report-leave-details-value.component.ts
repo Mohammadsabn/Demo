@@ -13,7 +13,9 @@ export class ReportLeaveDetailsValueComponent {
   
   employeeId:any;
   register=new FormGroup<any>({
-    employeeId: new FormControl('', [Validators.required])
+    employeeId: new FormControl('', [Validators.required]),
+    ReportType:new FormControl(''),
+    LeaveType:new FormControl('')
 
   })
  login(item:any){

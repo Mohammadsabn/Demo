@@ -5,7 +5,8 @@
     <h1 class="title">Add Holiday/Working Day</h1>
     <div class="content">
         <form [formGroup]="addForm" (ngSubmit)="onSubmit(addForm.value)">
-
+  
+            <div class="user-details">
             <div class="input-box">
                 <label for="action" class="details">Action</label>
                 <select id="action" class="form-control" formControlName="action">
@@ -14,6 +15,7 @@
                     <option value="working-day">Working Day</option>
                 </select>
             </div>
+        </div>
 
            <div class="user-details">
             <div class="input-box">
@@ -22,12 +24,13 @@
             </div>
         </div>
 
+            <div class="user-details">
             <div class="input-box">
                 <label for="description">Description</label>
                 <textarea id="description" class="form-control" formControlName="description"
                     [disabled]="true"></textarea>
             </div>
-
+            </div>
 
             <div class="button-group">
                 <button type="submit" class="button" [disabled]="addForm.invalid">Submit</button>
