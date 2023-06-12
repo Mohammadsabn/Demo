@@ -25,7 +25,7 @@ export class TopbarComponent {
         this.currentRoute = (<NavigationEnd>event).url;
         console.log("this is url",this.currentRoute);
         //rimbusrsment
-        if(this.currentRoute=="/initiaterem" ||this.currentRoute=="/reimbusmentapprove"){
+        if(this.currentRoute=="/initiaterem" ||this.currentRoute=="/reimbusmentapprove" || this.currentRoute=="/reimbusmentreqdetails"){
           this.data="rmb"
         } 
         //emplloyee

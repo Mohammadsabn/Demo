@@ -94,6 +94,7 @@ import { UnMarkLeaveComponent } from './request-module/un-mark-leave/un-mark-lea
 import { ViewHolidaysComponent } from './request-module/view-holidays/view-holidays.component';
 import { ViewLeaveComponent } from './request-module/view-leave/view-leave.component';
 import { CommonCodeDetailsDeleteComponent } from './common-code-module/common-code-details-delete/common-code-details-delete.component';
+import { ReimbusmentReqDetailsComponent } from './reimbusment-mdule/reimbusment-req-details/reimbusment-req-details.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -118,6 +119,7 @@ const routes: Routes = [
 
 {path: 'initiaterem',component:InitiateRemComponent},
 {path: 'reimbusmentapprove',component:ReimburseApproveComponent}, 
+{path:"reimbusmentreqdetails",component:ReimbusmentReqDetailsComponent},
 
 {path:'ReportChooseComponent',component:ReportBulkChooseComponent},
 {path:'Reportcompchoose',component:ReportCompChooseComponent},

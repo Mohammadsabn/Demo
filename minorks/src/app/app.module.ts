@@ -34,7 +34,7 @@ import { RejectedAppraisalComponent } from './appraisal-module/rejected-appraisa
 import { ViewappraisalComponent } from './appraisal-module/viewappraisal/viewappraisal.component';
 import { AprDoappraisalComponent } from './appraisal-module/apr-doappraisal/apr-doappraisal.component';
 import { ViewAppraisalDataComponent } from '../app/appraisal-module/view-appraisal-data/view-appraisal-data.component';
-
+import { ReimbusmentReqDetailsComponent } from './reimbusment-mdule/reimbusment-req-details/reimbusment-req-details.component';
 
 // --------------------------------    Mahesh ------------------------------------------- 
 
@@ -167,6 +167,7 @@ import { DashboardComponent } from './login-module/dashboard/dashboard.component
     ViewappraisalComponent,
     ViewAppraisalDataComponent,
     AprDoappraisalComponent,
+    ReimbusmentReqDetailsComponent,
     
 
 

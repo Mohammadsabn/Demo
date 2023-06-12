@@ -10,6 +10,8 @@ export class CancelTravelQueueComponent {
 
   travelqueue = [
     {  managerapproval: 'No Record Found', approvedmanager: 'No Record Found', pendingfinancemanagerapproval: 'No Record Found', approvedfinancemanagerapproval: 'No Record Found' },
+    {  managerapproval: 'No Record Found', approvedmanager: 'No Record Found', pendingfinancemanagerapproval: 'No Record Found', approvedfinancemanagerapproval: 'No Record Found' },
+    {  managerapproval: 'No Record Found', approvedmanager: 'No Record Found', pendingfinancemanagerapproval: 'No Record Found', approvedfinancemanagerapproval: 'No Record Found' }
   ];
 
   itemsPerPage = 10;

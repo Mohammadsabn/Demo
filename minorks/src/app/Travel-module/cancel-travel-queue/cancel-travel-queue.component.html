@@ -1,36 +1,44 @@
 <app-headder></app-headder>
 <app-topbar></app-topbar>
 <app-sidebar></app-sidebar>
+
 <form>
-    <div class="tablecontainer">
-        <h1 class="title">Cancel Requests</h1>
-        <br><br>
-        <div class="contentleft">
-            <input style="width: 60%; margin-right: 200px;" type="text" name="Searchdata" formControlName="Searchdata"
-                class="serchdata" placeholder="Search here">
-        </div><br>
+    <div class="container" class="tablecontainer" class="viewData">
+        <div class="table-content">
+            <div class="contentleft">
+                <h1 class="titleViewPage">Cancel Request    </h1>
+                <label class="contentleft">Search:</label>
+                <input type="text" name="employeeName" formControlName="employeeName" class="searchData"
+                    placeholder="EmployeeName">
+            </div><br>
+            <span>Show</span>
+            <select class="show-entries" (click)="onItemsPerPageChange()">
+                <option *ngFor="let option of itemsPerPageOptions" [value]="option">{{option}}</option>
+            </select>
+            <span>entries</span>
 
-        <hr> <br> <br>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Pending for Manager Approval</th>
-                    <th>Approved by Manager</th>
-                    <th>Pending for Finance Manager Approval</th>
-                    <th>Approved by Finance Manager</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let tq of travelqueue|slice: (currentPage - 1) * itemsPerPage : currentPage * itemsPerPage">
-                    <td>{{ tq.managerapproval }}</td>
-                    <td>{{ tq.approvedmanager }}</td>
-                    <td>{{ tq.pendingfinancemanagerapproval }}</td>
-                    <td>{{ tq.approvedfinancemanagerapproval }}</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pending for Manager Approval</th>
+                        <th>Approved by Manager</th>
+                        <th>Pending for Finance Manager Approval</th>
+                        <th>Approved by Finance Manager</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let tq of travelqueue|slice: (currentPage - 1) * itemsPerPage : currentPage * itemsPerPage">
+                        <td>{{ tq.managerapproval }}</td>
+                        <td>{{ tq.approvedmanager }}</td>
+                        <td>{{ tq.pendingfinancemanagerapproval }}</td>
+                        <td>{{ tq.approvedfinancemanagerapproval }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
     </div>
-    <app-footer></app-footer>
+</form>
+<app-footer></app-footer>

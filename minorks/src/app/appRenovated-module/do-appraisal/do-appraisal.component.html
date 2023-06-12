@@ -1,83 +1,94 @@
 <app-headder></app-headder>
 <app-topbar></app-topbar>
 <app-sidebar></app-sidebar>
-<h1 class="title">Complete your appraisal for the month</h1> <br><br>
-<br><br>
-<div class="tablecontainer">
+<form>
+    <div class="container" class="tablecontainer" class="viewData">
+        <div class="table-content">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Professional KPI</th>
-                <th>Weightage</th>
-                <th>Rating</th>
-                <th>Remarks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input class="serchdata" type="text" name="Indicators"></td>
-                <td><input class="serchdata" type="text" name="Weightage"></td>
-                <td>
-                    <select class="tableselect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </td>
-                <td><input class="serchdata" type="text" name="Remarks"></td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-</div>
+            <h1 class="titleViewPage">Complete your appraisal for the month</h1> <br><br>
 
-<br><br>
 
-<div class="tablecontainer">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Behavioural KPI</th>
-                <th>Weightage</th>
-                <th>Rating</th>
-                <th>Remarks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input class="serchdata" type="text" name="Indicators"></td>
-                <td><input class="serchdata" type="text" name="Weightage"></td>
-                <td>
-                    <select class="tableselect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </td>
-                <td><input class="serchdata" type="text" name="Remarks"></td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Professional KPI</th>
+                        <th>Weightage</th>
+                        <th>Rating</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="serchdata" type="text" name="Indicators"></td>
+                        <td><input class="serchdata" type="text" name="Weightage"></td>
+                        <td>
+                            <select class="tableselect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td><input class="serchdata" type="text" name="Remarks"></td>
+                    </tr>
+                </tbody>
+            </table>
 
-<br><br>
+
+        </div>
+
+
+
+        <div class="table-content">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Behavioural KPI</th>
+                        <th>Weightage</th>
+                        <th>Rating</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="serchdata" type="text" name="Indicators"></td>
+                        <td><input class="serchdata" type="text" name="Weightage"></td>
+                        <td>
+                            <select class="tableselect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td><input class="serchdata" type="text" name="Remarks"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</form>
+
+
+
 
 <form class="#" [formGroup]="employee_comment" (ngSubmit)="comment(employee_comment.value)">
     <div class="user-details">
         <div class="input-box">
             <label class="details">Employee Concerns/Comments :</label> <br>
-            <input type="text" name="comment" formControlName="comment" required>
+            <textarea id="comment" name="comment" formControlName="comment" required></textarea>
         </div>
+    </div>
+    <div class="user-details">
         <div class="input-box">
             <label class="">Future Goals :</label> <br>
-            <input type="text" name="goals" formControlName="goals" required>
+            <textarea id="goals" name="goals" formControlName="goals" required></textarea>
+
         </div>
     </div>
 </form>
@@ -88,3 +99,11 @@
     <button class="button" type="reset">Submit</button>
 </div>
 <app-footer></app-footer>
+ 
+
+
+
+
+
+
+
